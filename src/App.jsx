@@ -9,7 +9,7 @@ const App = () => {
   useEffect(() => {
     if (localStorage.getItem("jwt")) navigate("/employeelist");
     else navigate("/login");
-  });
+  },[]);
   return (
     <Routes>
       <Route path="/login" element={<Login />} />
